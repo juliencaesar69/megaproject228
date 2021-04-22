@@ -22,7 +22,7 @@ public class Saves : MonoBehaviour
     public bool _DisYes;
     
 
-    [Serializable] ////////////////////////Стопудово есть ошибка с бесконечным сохранением респектов
+    [Serializable]
     class SaveData
     {
         public float SoundSave;
