@@ -55,7 +55,7 @@ public class Script1 : MonoBehaviour
     public int RespectParent = 0; // счётчик влияния родственников
     public int RespectScool = 0; //Счётчик влияния школы
     public int RespectFriends = 0; //Счётчик влияния друзей
-    public bool DiscoYes = false; // Переключаетель ветки дискатеки / раодительского ДР
+    public bool DiscoYes = false; // Переключаетель ветки дискатеки / родительского ДР
     
 
     // Системные переменные //
@@ -196,7 +196,7 @@ public class Script1 : MonoBehaviour
             
         }
         ClickBut = false;
-        TextGG.text = "-Ладно... \n Надо вставать"; // \n это перенос строки
+        TextGG.text = "-Ладно... \n Надо вставать";
         yield return new WaitForSeconds (1f);
         Clock.SetActive (false);
         GG_poz.sprite = GG_ref[1];
@@ -308,7 +308,7 @@ public class Script1 : MonoBehaviour
 
 
 
-    IEnumerator Starting1() /////////////////Чекпоинт////////////////
+    IEnumerator Starting1() //Чекпоинт//
     {
         int MicroAnsver;
         LoadPoz = 1; 
@@ -793,7 +793,6 @@ public class Script1 : MonoBehaviour
         Other_poz0.SetActive(true);
         yield return new WaitForSeconds (1f);
         TextOther.text = "Мама: Сынок ты купил подарок папе?";
-////////////////////////////
         LButton.SetActive (true);
         LButton.transform.GetChild(0).GetComponent<Text>().text = "Забыл...";
         RButton.SetActive (true);
